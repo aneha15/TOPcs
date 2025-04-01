@@ -40,20 +40,20 @@ class LinkedList {
     this.size++;
   }
 
-  size() {
+  getSize() {
     return this.size;
   }
 
-  head() {
-    return this.head;
+  getHead() {
+    return this.head.value;
   }
 
-  tail() {
+  getTail() {
     let currNode = this.head;
     while (currNode.next) {
       currNode = currNode.next;
     }
-    return currNode;
+    return currNode.value;
   }
 
   at(index) {
@@ -120,7 +120,7 @@ class LinkedList {
   }
 
   insertAt(value, index) {
-    if (index < 0 || index > this.size) {
+    if (index < 0 || index >= this.size) {
       console.log("Enter a valid index");
     } else {
       let i = 0;
@@ -139,7 +139,7 @@ class LinkedList {
   }
 
   removeAt(index) {
-    if (index < 0 || index > this.size) {
+    if (index < 0 || index >= this.size) {
       return console.log("Enter a valid index");
     } else {
       let currNode = this.head;
@@ -175,4 +175,9 @@ console.log(list.contains("jinshi"));
 list.pop();
 console.log(list.find("maomao"));
 list.removeAt(3);
+console.log(list.toString());
+console.log(list.getSize());
+console.log(list.getHead());
+console.log(list.getTail());
+list.insertAt("test", 5);
 console.log(list.toString());
