@@ -1,15 +1,11 @@
 import { LinkedList } from "../linkedlist/linkedlist.js";
 
-class HashMap {
+export class HashMap {
   constructor() {
     this.capacity = 16;
     this.loadFactor = 0.75;
     this.buckets = new Array(this.capacity);
     this.size = 0; // tracks current size
-  }
-
-  indexOutOfBounds(index) {
-    return index < 0 || index >= this.arr.length;
   }
 
   hash(key) {
