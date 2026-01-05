@@ -1,6 +1,6 @@
 import { Node } from "./node.js";
 
-class LinkedList {
+export class LinkedList {
   constructor() {
     this.head = null;
     this.size = 0;
@@ -162,22 +162,22 @@ class LinkedList {
   }
 }
 
-const list = new LinkedList();
+// const list = new LinkedList();
 
-list.append("dog");
-list.append("cat");
-list.append("parrot");
-list.append("hamster");
-list.append("snake");
-list.append("turtle");
-list.insertAt("maomao", 2);
-console.log(list.contains("jinshi"));
-list.pop();
-console.log(list.find("maomao"));
-list.removeAt(3);
-console.log(list.toString());
-console.log(list.getSize());
-console.log(list.getHead());
-console.log(list.getTail());
-list.insertAt("test", 5);
-console.log(list.toString());
+// list.append("dog");
+// list.append("cat");
+// list.append("parrot");
+// list.append("hamster");
+// list.append("snake");
+// list.append("turtle");
+// list.insertAt("maomao", 2);
+// console.log(list.contains("jinshi"));
+// list.pop();
+// console.log(list.find("maomao"));
+// list.removeAt(3);
+// console.log(list.toString());
+// console.log(list.getSize());
+// console.log(list.getHead());
+// console.log(list.getTail());
+// list.insertAt("test", 5);
+// console.log(list.toString());
