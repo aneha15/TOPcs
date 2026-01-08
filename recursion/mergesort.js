@@ -30,7 +30,7 @@ function merge(a, b) {
   return c
 }
 
-function mergesort(arr) {
+export function mergesort(arr) {
   // base case
   if (arr.length <= 1) return arr;
 
@@ -42,4 +42,4 @@ function mergesort(arr) {
 }
 
 
-console.log(mergesort([3, 1, 2, 5, 1, 4, 7]));
+// console.log(mergesort([3, 1, 2, 5, 1, 4, 7]));
